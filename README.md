@@ -5,6 +5,10 @@ The goal of this very small web app is to simply allow a user to see a retina im
 # How do I use this thing?
 It's very simple! You need some degree of tech savvyness here, but not much.
 
+Before even the first step, you have to get these files (clone the repository). Along the right hand side of this page is a Download ZIP button if you're not sure how to use Github. Then, just unzip the files and put them somewhere like Documents or Desktop, or Projects - wherever you might keep your tools.
+
+If you can't find the download button, click this link: https://github.com/netpoetica/retina-image-viewer/archive/master.zip
+
 First, open the file in the root called "config.json" - this is the file Retina Image Viewer will use to determine the name and filetype of your images. You *must* follow the Apple convention of using @2x for your retina image file name, and the same name without @2x for your normal file name.
 
 Secondly, add your retina image (330 ppi) and your normal image (163 ppi) to the images folder.
