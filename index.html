@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>  <html class="ie_old lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie"><![endif]-->
+<!--[if IE 7 ]>     <html class="ie7 lt-ie10 lt-ie9 lt-ie8 ie"><![endif]-->
+<!--[if IE 8 ]>     <html class="ie8 lt-ie10 lt-ie9 ie"><![endif]-->
+<!--[if IE 9 ]>     <html class="ie9 lt-ie10 ie"><![endif]-->
+<!--[if IE 10 ]>    <html class="ie10 ie"><![endif]-->
+<!--[if gt IE 10 ]> <html class="ie_new ie"><![endif]-->
+<!--[if !(IE)]><!--><html><!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Retina Image Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'></script>
+    <script>
+      if (!window.Modernizr) {
+        document.write('<script src="static/components/modernizr/modernizr.js"><\/script>');
+      }
+    </script>
+</head>
+<body>
+    <div class='pageWrapper'>
+      <h1>Image in image tag: </h1>
+      <p>Non-retina:</p>
+      <img id='non-retina-img' src='' />
+
+      <p>Retina:</p>
+      <img id='retina-img' src='' />
+    
+      <h1>Image in background image (CSS):</h1>
+      <p>Non-retina:</p>
+      <div id='non-retina-bg'></div>
+
+      <p>Retina:</p>
+      <div id='retina-bg'></div>
+    </div>
+
+    <script src="static/js/vendor/jquery.min.js"></script>
+    <script src="static/js/main.js"></script>
+
+</body>
+</html>
