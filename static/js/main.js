@@ -1,5 +1,5 @@
 var App = function($){
-  console.log("-> App::new()");
+  //console.log("-> App::new()");
 
   // Save reference to App object scope
   var _this = this;
@@ -48,7 +48,7 @@ var App = function($){
 
   // Single point of entry - called immediately after instantiation
   function _init(){
-     console.log("-> App::init()");
+     //console.log("-> App::init()");
 
      $.getJSON('/config.json', function(res){
        $.each(ElementsVO, function(){
@@ -68,7 +68,6 @@ var App = function($){
            .load(resizeBgContainer)
            .attr('src', fullPath);
          } else {
-           console.log("Found bg image: " + this)
            $('#' + this).css('background-image', 'url(' + fullPath + ')')
          }
        });
